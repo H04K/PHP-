@@ -1,0 +1,32 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script>
+        var note = prompt("Quelle est ta note", "Note ?");
+
+        if (note < 10) {
+            document.write("<h2>"+"La note de " + note +  " t'accorde la mention " + "ECHEC" + "</h2>");
+        }
+
+        if (note >= 10 && note < 12) {
+            document.write("<h2>"+"La note de " + note +  " t'accorde la mention " + "PASSABLE" + "</h2>");
+        }
+
+        if (note >= 12 && note < 14) {
+            document.write("<h2>"+"La note de " + note +  " t'accorde la mention " + "ASSEZ BIEN" + "</h2>");
+        }
+        if (note >= 14 && note < 16) {
+            document.write("<h2>"+"La note de " + note +  " t'accorde la mention " + " BIEN" + "</h2>");
+        }
+        if (note >= 16) {
+            document.write("<h2>"+"La note de " + note +  " t'accorde la mention " + "TRES BIEN" + "</h2>");
+        }
+    </script>
+
+<body>
+
+</body>
+
+</html>
