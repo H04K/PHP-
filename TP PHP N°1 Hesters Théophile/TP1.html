@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style> 
+#animated_div {
+    margin-top: 50px;
+width:70px;
+height:47px;
+background: #92B901;
+color: #ffffff;
+position: relative;
+font-weight:bold;
+font-size:20px;
+padding:10px;
+animation:animated_div 5s 1;
+border-radius:5px;
+}
+
+@keyframes animated_div
+{
+0% {transform: rotate(0deg);left:0px;}
+25% {transform: rotate(20deg);left:0px;}
+50% {transform: rotate(0deg);left:500px;}
+55% {transform: rotate(0deg);left:500px;}
+70% {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100% {transform: rotate(-360deg);left:0px;}
+}
+
+        </style>
+    </head>
+    <body> 
+    <div id="animated_div">Ex 3.3 demo 2</div>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+</head>
+<body>
+<div></div>
+<style>
+#delay_demo {
+position:relative;
+width:500px;
+height:400px;
+margin:0 auto 10px;
+border:1px #aaa solid;
+padding:10px;
+}
+#dd_main {
+width:100px;
+height:100px;
+position:absolute;
+top:160px;
+left:210px;
+background-color:red;
+border-radius:50px;
+transition: all 2s ease-in-out;}
+#delay_demo .center {
+width:500px;
+position:absolute;
+bottom:20px;
+}
+#dd1, #dd2, #dd3, #dd4, #dd5, #dd6, #dd7, #dd8 {
+width:20px;
+height:20px;
+border-radius:10px;
+position:absolute;
+top:200px;
+left:250px;
+background-color:blue;
+transition: all 2s ease-in-out; /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+transform: translate3d(0,0,0);}
+#dd1 {
+transition-delay: 0.1s; }
+#dd2 {
+transition-delay: 0.2s; }
+#dd3 {
+transition-delay: 0.3s; }
+#dd4 {
+transition-delay: 0.4s; }
+#dd5 {
+transition-delay: 0.5s; }
+#dd6 {
+transition-delay: 0.6s; }
+#dd7 {
+transition-delay: 0.7s; }
+#dd8 {
+transition-delay: 0.8s; }
+#delay_demo:hover #dd_main {
+opacity:0;
+}
+#delay_demo:hover #dd1, #delay_demo.hover_effect #dd1 {
+transform: translate(-250px,-200px);}
+#delay_demo:hover #dd2, #delay_demo.hover_effect #dd2 {
+transform: translate(0,-200px);}
+#delay_demo:hover #dd3, #delay_demo.hover_effect #dd3 {
+transform: translate(250px,-200px);}
+#delay_demo:hover #dd4, #delay_demo.hover_effect #dd4 {
+transform: translate(250px, 0);}
+#delay_demo:hover #dd5, #delay_demo.hover_effect #dd5 {
+transform: translate(250px,200px);}
+#delay_demo:hover #dd6, #delay_demo.hover_effect #dd6 {
+transform: translate(0,200px);}
+#delay_demo:hover #dd7, #delay_demo.hover_effect #dd7 {
+transform: translate(-250px,200px);}
+#delay_demo:hover #dd8, #delay_demo.hover_effect #dd8 {
+transform: translate(-250px,0);}
+</style>
+<div id="delay_demo" class="shadow hover">
+<div id="dd_main"></div>
+<div id="dd1"></div>
+<div id="dd2"></div>
+<div id="dd3"></div>
+<div id="dd4"></div>
+<div id="dd5"></div>
+<div id="dd6"></div>
+<div id="dd7"></div>
+<div id="dd8"></div>
+<p class="center"> Hover on me</p>
+</div>
+</section>
+</div>
+</body>
+</html>

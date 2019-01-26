@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style> 
+@keyframes resize 
+{0% {padding: 0;
+}
+50% 
+{
+padding: 0 20px;
+background-color:rgba(255,0,0,0.2);
+}
+100% 
+{
+padding: 0 100px;
+background-color:rgba(255,0,0,0.9);
+}
+}
+#box {height:50px;width:50px;
+margin:0 auto;
+border:1px red solid;
+background-color:rgba(255,0,0,0.7);
+}#box:hover {animation-name:resize;
+animation-duration: 1s;
+animation-iteration-count: 4;
+animation-direction: alternate;
+}
+@keyframes demo
+
+{ 
+from 
+{ 
+animation-timing-function: ease;
+transform: translateX(0px); 
+} 
+50% 
+{ 
+animation-timing-function: ease-in;
+transform: translateX(300px); 
+} 
+to
+{ 
+animation-timing-function: ease-inout;
+transform: translateX(900px); 
+} 
+} 
+#testCanvas 
+{ animation-delay: 0s; animation-duration: 6s;
+animation-iteration-count: infinite;
+animation-name: demo;
+}
+</style>
+</head>
+<body>
+<div id="box"></div>
+</body>
+</html>
