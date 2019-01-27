@@ -1,0 +1,39 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hesters Théophile</title>
+    <script>
+        function table_mult(N) {
+            document.write("<table border = 1>");
+            document.write("<td>");
+            document.write("Table de :" + N + "</br>");
+            document.write("</td>");
+            document.write("</table>");
+
+            for (var cpt = 0; cpt <= 10; cpt++) {
+                i = N * cpt;
+                document.write("<table border = 1>");
+                document.write("<td>");
+                document.write(cpt + "x" + N + " = " + i + "</br>");
+                document.write("</td>");
+                document.write("</table>");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript" language="javascript1.2">
+        var N = 0;
+        var i = 0;
+        N = prompt("Tu veux la Table de :  ", "?");
+        table_mult(N);
+    </script>
+</body>
+
+
+
+</html>

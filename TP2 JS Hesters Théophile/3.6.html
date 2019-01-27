@@ -1,0 +1,36 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hesters Théophile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <script type="text/javascript" language="javascript1.2">
+        var tabl = 0;
+        var i = 0;
+        tabl = prompt("Tu veux la Table de :  ", "?");
+        document.write("<table border = 1>");
+        document.write("<td>");
+        document.write("Table de :" + tabl + "</br>");
+        document.write("</td>");
+        document.write("</table>");
+        for (var cpt = 0; cpt <= 10; cpt++) {
+            i = tabl * cpt;
+            document.write("<table border = 1>");
+            document.write("<td>");
+            document.write(cpt + "x" + tabl + " = " + i + "</br>");
+            document.write("</td>");
+            document.write("</table>");
+        }
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

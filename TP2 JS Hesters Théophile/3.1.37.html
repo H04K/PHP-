@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HEsters Théophile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script type="text/javascript" language="javascript1.2">
+        function hasard(N) {
+            return Math.floor(Math.random() * N) + 1;
+        }
+        document.write("Tableau de 10 nombres au hasard<br>");
+        max = prompt("Nombres au hasard de 1 à ", "10");
+        tab = new Array(10);
+        for (var i = 0; i < 10; i++) tab[i] = hasard(max);
+        for (var i = 0; i < 10; i++) document.write("tab [" + i + "] = " + tab[i] + "<br>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

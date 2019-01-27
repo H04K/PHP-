@@ -1,0 +1,30 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" language="javascript1.2">
+        function bonjour(prenom) {
+            document.write("Bonjour, comment vas-tu ", prenom, " ?<br>");
+        }
+
+        function volumeSphere(rayon) {
+            return 4 / 3 * Math.PI * Math.pow(rayon, 3);
+        }
+
+        function calculerPrix(PrixUnitaire, NbArticles) {
+            return PrixUnitaire * NbArticles;
+        }
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript" language="javascript1.2">
+        {
+            var montant = calculerPrix(150, 4);
+            document.write("Tu dois payer  " + calculerPrix(150, 4) + " euros.<br>");
+            document.write("Le volume de la sphère de rayon unité est " + volumeSphere(1) + "<br>");
+        }
+    </script>
+</body>
+
+</html>
