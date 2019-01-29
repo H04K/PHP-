@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>un seul clic</title>
+    <script type="text/javascript" language="javascript1.2">
+        var nombreclic = 0;
+
+        function compteclic(form) {
+            nombreclic++;
+            if (nombreclic > 1) alert(
+                "Vous avez d\351j\340 cliqu\351 ce bouton.\nLe formulaire est en cours de traitement...");
+        }
+    </script>
+</head>
+
+<body>
+    <form name="formulaire"><input type="button" value="Cliquez-moi !" onclick="compteclic(document.formulaire)"></form>
+</body>
+
+</html>

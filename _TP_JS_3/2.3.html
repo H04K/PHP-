@@ -1,0 +1,37 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hesters Théophile</title>
+    <script>
+        function reponse(form) {
+            if ((form.choix1.checked == true) && (form.check1.checked == true) && (form.check2.checked == false) && (
+                    form.formulaire.selected ==  2)) alert("C'est la bonne r\351ponse !");
+            elsealert("D\351sol\351, continuez \340 chercher...");
+        }
+        
+    </script>
+
+
+</head>
+
+<body>
+    <!--RADIO-->
+    Un angle droit doit faire <form name="formulaire"><input type="radio" name="45" value="1">45°<br><input type="radio"
+            name="bon1" value="2">90°<br>
+        <!--CASES-->
+        Un triangle isocèle possède : </br>
+        <form name="formulaire"><input type="checkbox" name="check1" value="1">2 Côtés égaux<br><input type="checkbox"
+                name="check2" value="2">3 Côtés égaux<br>
+            <!--Déroulant-->
+            Un triangle équilatéral possède : <form name="formulaire"><select name="list">
+                    <option value="1">2 Côtés égaux<option value="2">3 Côtés égaux</br>
+                </select>
+                <input type="button" name="but" value="Corriger" onclick="reponse(form)"></form>
+
+
+
+
+</html>

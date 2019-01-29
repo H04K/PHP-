@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>liste d&eacute;roulante</title>
+    <script type="text/javascript" language="javascript1.2">
+        function liste(form) {
+            alert("Le navigateur " + (form.list.selectedIndex + 1));
+        }
+    </script>
+</head>
+
+<body>Quel navigateur utilisez-vous ?<form name="formulaire"><select name="list">
+            <option value="1">Internet Explorer<option value="2">Firefox<option value="3">Autre
+        </select><input type="button" name="b" value="R&eacute;ponse" onclick="liste(document.formulaire)"></form>
+</body>
+
+</html>
