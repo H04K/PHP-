@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>nombre</title>
+    <script type="text/javascript" language="javascript1.2">
+        function verifn() {
+            var n = document.formulaire.nombre.value;
+            if (isNaN(n) || (n == 0)) alert("Entrer un nombre SVP !");
+            elsealert("Entr\351e valide...");
+        }
+    </script>
+</head>
+
+<body>
+    <form name="formulaire">Code postal&nbsp;:&nbsp;<input type="text" name="nombre" size="5" maxlength="5"><br><input
+            type="button" name="bouton" value="Tester" onclick="verifn()"><br></form>
+</body>
+
+</html>

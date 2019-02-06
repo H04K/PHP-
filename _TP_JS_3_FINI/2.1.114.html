@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>boutons radio</title>
+    <script type="text/javascript" language="javascript1.2">
+        function choixsexe(form) {
+            if (form.choix[0].checked) alert("Proposition " + form.choix[0].value);
+            if (form.choix[1].checked) alert("Proposition " + form.choix[1].value);
+        }
+    </script>
+</head>
+
+<body>Entrez votre choix <form name="formulaire"><input type="radio" name="choix" value="1">Sexe masculin<br><input
+            type="radio" name="choix" value="2">Sexe f&eacute;minin<br><input type="button" name="but" value="Quel est votre choix ?"
+            onclick="choixsexe(document.formulaire)"></form>
+</body>
+
+</html>

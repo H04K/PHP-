@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>cases &agrave; cocher</title>
+    <script type="text/javascript" language="javascript1.2">
+        function reponse(form) {
+            if ((form.check1.checked == true) && (form.check2.checked == true) && (form.check3.checked == false) && (
+                    form.check4.checked == true)) alert("C'est la bonne r\351ponse !");
+            elsealert("D\351sol\351, continuez \340 chercher...");
+        }
+    </script>
+</head>
+
+<body>S&eacute;lectionnez les balises HTML : <form name="formulaire"><input type="checkbox" name="check1" value="1">&lt;h1&gt;
+        ... &lt;/h1&gt;<br><input type="checkbox" name="check2" value="2">&lt;a&gt; ... &lt;/a&gt;<br><input type="checkbox"
+            name="check3" value="3">&lt;op&gt; ... &lt;/op&gt;<br><input type="checkbox" name="check4" value="4">&lt;b&gt;
+        ... &lt;/b&gt;<br><input type="button" name="but" value="Corriger" onclick="reponse(document.formulaire)"></form>
+</body>
+
+</html>

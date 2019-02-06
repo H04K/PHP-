@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Questionnaire</title>
+  <script>
+ 
+    function reponse(form)
+    {
+      var point = 0;
+      if (form.choix[1].checked){
+        point+=1;
+      }
+      if (form.check1.checked && form.check2.checked==false){
+        point+=1;
+      }
+      if (form.liste.selectedIndex == 1){
+        point+=1;
+      }
+      if (point == 3){
+        alert(point + " points." + " Bonne réponse !");
+      }
+      else {
+        alert( point + " points. " + " Réessayez encore !")
+      }
+    }
+  </script>
+</head>
+<body>
+    <form name="formulaire">
+      Un angle droit fait :<br>
+        <input type="radio" name="choix">45°<br>
+        <input type="radio" name="choix">90°<br>
+      Un triangle isocèle a :<br>
+        <input type="checkbox" name="check1" value="1">2 côtés égaux<br>
+        <input type="checkbox" name="check2" value="2">3 côtés égaux<br>
+      Un triangle équilatéral a :<br>
+        <select name="liste">
+          <option value="1">2 côtés égaux
+          <option value="2">3 côtés égaux
+        </select>
+    <br><br>
+    <input type="button" name="but" value="Vérifier" onclick="reponse(document.formulaire)">
+    <input type="button" value="Réinitialiser" onclick="this.form.reset()">
+    </form>
+</body>
+</html>
