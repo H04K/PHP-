@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <form name="temps">
+        <input readonly type="text" name="trotteuse" value="00:00:00">
+    </form>
+    <script>
+        var timer = 0; var heure = 0; var minute = 0; var seconde = 0;
+        var j=1;
+        function timerseconde()
+        {
+ 
+            if(j==1)
+            {
+                seconde += 1;
+                if(seconde>=60)
+                {
+                    minute += 1;
+                    seconde = 0;
+                }
+                if(minute>=60)
+                {
+                    heure += 1;
+                    minute = 0;            
+                }
+                if(seconde<=9)
+                {
+                    temps = heure + ":" + minute + ":0" + seconde;
+                }
+                if(minute<=9)
+                {
+                    temps = heure + ":0" + minute + ":" + seconde;
+                }
+                if(heure<=9)
+                {
+                    temps = "0" + heure + ":" + minute + ":" + seconde;
+                }
+                if(seconde<=9 && minute<=9)
+                {
+                    temps = heure + ":0" + minute + ":0" + seconde;
+                }
+                if(seconde<=9 && heure<=9)
+                {
+                    temps = "0" + heure + ":" + minute + ":0" + seconde;
+                }
+                if(heure<=9 && minute<=9)
+                {
+                    temps = "0" + heure + ":0" + minute + ":" + seconde;
+                }
+                if(seconde<=9 && minute<=9 && heure<=9)
+                {
+                    temps = "0" + heure + ":0" + minute + ":0" + seconde;
+                }
+                j=2;
+            }
+             else if(j==2)
+            {
+                if(seconde<=9)
+                {
+                    temps = heure + " " + minute + " 0" + seconde;
+                }
+                if(minute<=9)
+                {
+                    temps = heure + " 0" + minute + " " + seconde;
+                }
+                if(heure<=9)
+                {
+                    temps = "0" + heure + " " + minute + " " + seconde;
+                }
+                if(seconde<=9 && minute<=9)
+                {
+                    temps = heure + " 0" + minute + " 0" + seconde;
+                }
+                if(seconde<=9 && heure<=9)
+                {
+                    temps = "0" + heure + " " + minute + " 0" + seconde;
+                }
+                if(heure<=9 && minute<=9)
+                {
+                    temps = "0" + heure + " 0" + minute + " " + seconde;
+                }
+                if(seconde<=9 && minute<=9 && heure<=9)
+                {
+                    temps = "0" + heure + " 0" + minute + " 0" + seconde;
+                }
+                j=1;
+            }
+            document.temps.trotteuse.value = temps;
+            timer = setTimeout(timerseconde,500);
+        }
+        timerseconde();
+    </script>
+</head>
+<body>
+</body>
+</html>

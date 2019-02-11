@@ -1,0 +1,54 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hesters Théophile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        var x = 0;
+        var timer = 0;
+
+        function testertimeout() {
+            x = x + 1;
+            alert(" value of x is - " + x);
+            timer = setTimeout(testertimeout, 3000);
+        }
+
+        function stoppertimeout() {
+            clearTimeout(timer);
+        }
+    </script>
+    
+</head>
+
+<body>
+   
+    <script>
+        var temps = 0;
+        var save;
+        var heures = 0, minutes = 0, secondes = 0;
+
+        function chronometre()
+        {
+            save = ++temps;
+
+            heures = Math.trunc(save / 3600);
+            save -= heures * 3600;
+
+            minutes = Math.trunc(save / 60);
+            save -= minutes * 60;
+
+            document.getElementById("chrono").innerHTML = heures + ":" + minutes + ":" + save;
+
+            setTimeout(chronometre, 1000);
+        }
+    </script>
+
+        <div id="chrono"></div>
+        <script>chronometre();</script>
+</body>
+
+</html>

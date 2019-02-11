@@ -1,0 +1,32 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hesters Théophile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        var x = 0;
+        var timer = 0;
+
+        function testertimeout() {
+            x = x + 1;
+            alert(" value of x is - " + x);
+            timer = setTimeout(testertimeout, 3000);
+        }
+
+        function stoppertimeout() {
+            clearTimeout(timer);
+        }
+    </script>
+</head>
+
+<body>
+    <form name="timeout"><input type="button" onClick="testertimeout()" value="start"><input type="button" onClick="stoppertimeout()"
+            value="stop"></form>
+
+</body>
+
+</html>

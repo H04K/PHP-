@@ -1,0 +1,34 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hesters Théophile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+</head>
+<body>
+
+        <div id="horloge">&nbsp;</div>
+ 
+        <script language="javascript">
+        function horloge()
+        {
+            today = new Date();
+         
+            temps = "";
+            
+            temps += "Il est "
+            temps +=today.getHours()+":"+today.getMinutes()+":"+today.getSeconds();
+         
+            setTimeout("horloge()", 1000);
+         
+            document.getElementById("horloge").innerHTML = temps;
+        }
+         
+        horloge();
+        </script>
+        
+    
+</body>
+</html>
