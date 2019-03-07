@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <script>
+        //javaScript
+        function verifMail() {
+            if (document.forms[0].mail.value.length < 6 || document.forms[0].mail.value.indexOf("@") < 0 || document.forms[
+                    0].mail.value.indexOf(".") < 0) {
+                alert("mail incorrect");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="xyz" action="recevoirMail.php" method="post" onSubmit="return verifMail();">Mail :<input name="mail"></form>
+</body>
+
+</html>
